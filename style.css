@@ -714,3 +714,43 @@ body {
     font-size: 12px;
     display: none;
 }
+
+/* Barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.search-bar input {
+    width: 250px; /* Aumenta o tamanho do campo de input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #005f99;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #005f99;
+    color: white;
+    font-size: 14px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #003f66;
+}
+
+.search-bar button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #005f99;
+}
