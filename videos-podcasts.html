@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página com vídeos e podcasts sobre acessibilidade na vida cotidiana.">
+    <title>Vídeos e Podcasts - Site Acessível</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="videos-podcasts.html" aria-current="page">Vídeos e Podcasts</a></li>
+                <li><a href="graficos.html">Gráficos IBGE</a></li>
+                <li><a href="questionario.html">Questionário</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Vídeos e Podcasts</h1>
+            <p>
+                Explore nossos vídeos e podcasts que abordam a acessibilidade digital. 
+                Use os filtros abaixo para navegar pelos conteúdos.
+            </p>
+            <div class="filter">
+                <button id="filterVideos" aria-label="Exibir somente vídeos">Exibir Vídeos</button>
+                <button id="filterPodcasts" aria-label="Exibir somente podcasts">Exibir Podcasts</button>
+                <button id="filterAll" aria-label="Exibir todos os conteúdos">Exibir Todos</button>
+            </div>
+            <div id="contentList" class="content-list" aria-live="polite">
+                <p class="no-content-message">Carregando conteúdos...</p>
+            </div>
+        </section>
+    </main>
+    <footer class="fixed-footer">
+        <p>&copy; 2024 Site Acessível. Desenvolvido por Lucas Dal Pra Brascher.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de questionário para dúvidas, avaliações e sugestões.">
+    <title>Questionário - Site Acessível</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="videos-podcasts.html">Vídeos e Podcasts</a></li>
+                <li><a href="graficos.html">Gráficos IBGE</a></li>
+                <li><a href="questionario.html" aria-current="page">Questionário</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Questionário</h1>
+            <p>
+                Preencha o formulário abaixo para enviar dúvidas, avaliações, sugestões ou responder 
+                um questionário sobre o conteúdo do site. Seus dados serão enviados diretamente para o administrador.
+            </p>
+            <form id="questionarioForm" action="https://api.staticforms.xyz/submit" method="POST">
+                <input type="hidden" name="accessKey" value="a1860bb0-cd11-479e-826d-e8a6fe058b3b">
+                <input type="hidden" name="subject" value="Novo formulário enviado">
+                <input type="hidden" name="redirectTo" value="thank-you.html">
+
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="formTipo">Tipo de Formulário:</label>
+                    <select id="formTipo" name="formTipo" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="avaliacao">Avaliação</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="questionario">Responder Questionário</option>
+                    </select>
+                </div>
+
+                <div id="formExtra">
+                </div>
+
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="fixed-footer">
+        <p>&copy; 2024 Site Acessível. Desenvolvido por Lucas Dal Pra Brascher.</p>
+    </footer>
+</body>
+</html>

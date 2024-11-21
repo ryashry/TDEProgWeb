@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tela de configurações para personalização do site.">
+    <title>Configurações - Site Acessível</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="videos-podcasts.html">Vídeos e Podcasts</a></li>
+                <li><a href="graficos.html">Gráficos IBGE</a></li>
+                <li><a href="questionario.html">Questionário</a></li>
+                <li><a href="configuracoes.html" aria-current="page">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Configurações de Acessibilidade</h1>
+            <p>Personalize o site para atender às suas necessidades de acessibilidade.</p>
+            <form id="settingsForm">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="daltonismoMode"> Ativar Modo Daltonismo
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="darkMode"> Ativar Modo Escuro
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="highContrast"> Contraste de Cores Melhorado
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="spacing"> Ajuste de Espaçamento
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="feedback"> Ativar Feedback Auditivo
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="fontSize">Alterar o Tamanho da Fonte:</label>
+                    <input type="range" id="fontSize" min="12" max="24" value="16">
+                </div>
+
+                <button type="button" id="applySettings" class="submit-button">Aplicar Configurações</button>
+            </form>
+        </section>
+    </main>
+    <footer class="fixed-footer">
+        <p>&copy; 2024 Site Acessível. Desenvolvido por Lucas Dal Pra Brascher.</p>
+    </footer>
+</body>
+</html>

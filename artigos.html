@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página com artigos sobre acessibilidade na vida cotidiana.">
+    <title>Artigos - Site Acessível</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="artigos.html" aria-current="page">Artigos</a></li>
+                <li><a href="videos-podcasts.html">Vídeos e Podcasts</a></li>
+                <li><a href="graficos.html">Graficos IBGE</a></li>
+                <li><a href="questionario.html">Questionário</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Pesquisar..." 
+                    aria-label="Digite sua pesquisa aqui"
+                >
+                <button id="searchButton" aria-label="Clique para pesquisar">Pesquisar</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Artigos sobre Acessibilidade</h1>
+            <p>Explore nossos artigos e aprenda mais sobre acessibilidade na vida cotidiana.</p>
+            <div id="articlesList">
+                <div class="article-item">
+                    <h2>eMAG_CONTEUDISTA_MOD_1</h2>
+                    <a href="artigos/eMAG_CONTEUDISTA_MOD_1.pdf" target="_blank">Abrir</a> | 
+                    <a href="artigos/eMAG_CONTEUDISTA_MOD_1.pdf" download>Baixar</a>
+                </div>
+                <div class="article-item">
+                    <h2>eMAG_CONTEUDISTA_MOD_2</h2>
+                    <a href="artigos/eMAG_CONTEUDISTA_MOD_2.pdf" target="_blank">Abrir</a> | 
+                    <a href="artigos/eMAG_CONTEUDISTA_MOD_2.pdf" download>Baixar</a>
+                </div>
+                <div class="article-item">
+                    <h2>AcessWeb – Um a Perspetiva Sobre a Acessibilidade Web em Portugal</h2>
+                    <a href="artigos/acessweb.pdf" target="_blank">Abrir</a> | 
+                    <a href="artigos/acessweb.pdf" download>Baixar</a>
+                </div>
+                <!-- Professor, os artigos sao adicionados manualmente aqui! -->
+            </div>
+        </section>
+    </main>
+    <footer class="fixed-footer">
+        <p>&copy; 2024 Site Acessível. Desenvolvido por Lucas Dal Pra Brascher.</p>
+    </footer>
+</body>
+</html>
