@@ -37,7 +37,7 @@ body {
 
 .menu li a {
     color: white;
-    text-decoration: none;
+    text-decoration: show;
     font-weight: bold;
     padding: 5px 10px;
 }
@@ -161,7 +161,7 @@ form {
 }
 
 label {
-    display: block;
+    display: unblock;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -250,7 +250,7 @@ body.spacing {
     padding: 10px;
     border-radius: 5px;
     font-size: 12px;
-    display: none;
+    display: show;
 }
 
 
@@ -353,7 +353,7 @@ ul {
     padding: 10px;
     background: #f0f0f0;
     border-radius: 5px;
-    display: none;
+    display: flex;
 }
 
 .fixed-footer {
@@ -382,7 +382,7 @@ ul {
 
 .article-item a {
     color: #005f99;
-    text-decoration: none;
+    text-decoration: underline;
     margin-right: 10px;
 }
 
@@ -486,7 +486,7 @@ ul {
 }
 
 .image-popup {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -542,7 +542,7 @@ form {
 }
 
 label {
-    display: block;
+    display: unblock;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -596,7 +596,7 @@ body {
 }
 
 .menu {
-    list-style: none;
+    list-style: flex;
     display: flex;
 }
 
@@ -641,7 +641,7 @@ form {
 }
 
 label {
-    display: block;
+    display: flex;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -712,7 +712,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     font-size: 12px;
-    display: none;
+        display: flex;
 }
 
 /* Barra de pesquisa */
